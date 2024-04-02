@@ -1,7 +1,8 @@
 #!/bin/bash
-ln -sf ~/.dotfiles/hypr ~/.config/hypr
-ln -sf ~/.dotfiles/kitty ~/.config/kitty
-ln -sf ~/.dotfiles/bash/bashrc ~/.bashrc
-mkdir -p ~/Pictures/wallpapers
-ln -sf ~/.dotfiles/wallpapers ~/Pictures/wallpapers/hypr
-echo -e "0 8    * * *   root " | sudo ln -sf ~/.dotfiles/nvim/sysinit.vim /etc/xdg/nvim/sysinit.vim
+DPATH=$(readlink -f .)
+ln -sfn $DPATH/hypr ~/.config/hypr
+ln -sfn $DPATH/kitty ~/.config/kitty
+ln -sfn $DPATH/bash/bashrc ~/.bashrc
+mkdir -p ~/Pictures/wallpapers/
+ln -sfn $DPATH/wallpapers ~/Pictures/wallpapers/hypr
+echo -e "0 8    * * *   root " | sudo ln -sf $DPATH/nvim/sysinit.vim /etc/xdg/nvim/sysinit.vim
