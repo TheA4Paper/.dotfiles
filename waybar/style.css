@@ -48,6 +48,18 @@ window#waybar {
     color: @clight;
 }
 
+#network {
+    color: @bgdark;
+    margin-right:5px;
+}
+
+#bluetooth {
+    color: @bgdark;
+    margin-left: 5px;
+    margin-right: 5px;
+    min-width: 30px;
+}
+
 #custom-separator {
     min-width: 1px;
     color: @bgdark;

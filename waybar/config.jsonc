@@ -7,9 +7,13 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+        "network",
+        "custom/separator",
+        "bluetooth"
     ],
     "modules-center": [
+        "mpris"
     ],
     "modules-right": [
         "custom/separator",
@@ -99,6 +103,43 @@
       "hyprland/language": {
         "format": "{short}",
         "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
+    },
+
+    "mpris": {
+        "format": "{player_icon} {dynamic}",
+        "format-paused": "{status_icon} <i>{dynamic}</i>",
+        "max-length": 30,
+        "player-icons": {
+            "default": "▶",
+            "mpv": "🎵"
+        },
+        "status-icons": {
+            "paused": "⏸"
+        },
+        // "ignored-players": ["firefox"]
+    },
+
+    "network": {
+        "format": "{ifname}",
+        "format-wifi": "({signalStrength}%) ",
+        "format-disconnected": "󰖪", //An empty format will hide the module.
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+        "tooltip-format-wifi": "{essid}",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
+        "on-click": "iwgtk",
+        "max-length": 50
+    },
+
+    "bluetooth": {
+        // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+        "format": "{status} 󰂯",
+        "format-disabled": "", // an empty format will hide the module
+        "format-connected": "{num_connections} connected ",
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "on-click": "blueberry"
     },
 
     /* Icons */
