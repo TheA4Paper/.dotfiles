@@ -63,7 +63,7 @@ else
 UC="${BCYAN}"
 fi
 #hostname color
-HC="${BMAGENTA}"
+HC="${BBLUE}"
 #regular color
 RC="${BWHITE}"
 #default color

@@ -1,0 +1,8 @@
+background_opacity 0.5
+# foreground #FFFFFF
+
+
+# BEGIN_KITTY_THEME
+# 1984 Dark
+include current-theme.conf
+# END_KITTY_THEME
