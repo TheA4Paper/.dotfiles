@@ -3,6 +3,7 @@ SCRIPT=$(readlink -f "$0")
 DPATH=$(dirname "$SCRIPT")
 ln -sfn $DPATH/hypr ~/.config/hypr
 ln -sfn $DPATH/kitty ~/.config/kitty
+ln -sfn $DPATH/waybar ~/.config/waybar
 ln -sfn $DPATH/bash/bashrc ~/.bashrc
 mkdir -p ~/Pictures/wallpapers/
 ln -sfn $DPATH/wallpapers ~/Pictures/wallpapers/hypr
