@@ -1,3 +1,6 @@
+@define-color bgdark #313131;
+@define-color clight #d4d4d4;
+
 * {
     /* all: unset; */
     /* `otf-font-awesome` is required to be installed for icons */
@@ -7,14 +10,14 @@
 }
 
 window#waybar {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: transparent;
     color: black;
 }
 
 #workspaces {
     padding: 5px 10px 5px 10px;
     margin: 0;
-    background-color: rgb(10, 10, 10);
+    background-color: @bgdark;
     border-radius: 0px 0px 20px 0px;
 }
 
@@ -33,8 +36,8 @@ window#waybar {
 
 #clock {
     /* font-size: 13; */
-    color: rgb(212, 212, 212);
-    background-color: rgb(10, 10, 10);
+    color: @clight;
+    background-color: @bgdark;
     padding: 0px 15px 0px 15px;
     border-radius: 0px 0px 0px 20px;
 }
@@ -42,12 +45,12 @@ window#waybar {
 #battery {
     margin-left: 5px;
     min-width: 50px;
-    color: rgb(212, 212, 212);
+    color: @clight;
 }
 
 #custom-separator {
     min-width: 1px;
-    color: rgb(10, 10, 10);
+    color: @bgdark;
     padding: 0px 1px 1px 1px;
 }
 
@@ -56,18 +59,18 @@ window#waybar {
     margin-left: 6px;
     min-width: 15px;
     font-size: 20px;
-    color: rgb(212, 212, 212);
+    color: @clight;
 }
 
 #custom-lighticon {
     margin-left: 6px;
     min-width: 15px;
     font-size: 20px;
-    color: rgb(212, 212, 212);
+    color: @clight;
 }
 
 #language {
-    color: rgb(212, 212, 212);
+    color: @clight;
     min-width: 20px;
 }
 /*Audio*/
@@ -88,7 +91,7 @@ window#waybar {
     min-height: 5px;
     min-width: 80px;
     border-radius: 5px;
-    background-color: rgb(10, 10, 10);
+    background-color: @bgdark;
 }
 #pulseaudio-slider highlight {
     border-radius: 5px;
@@ -112,7 +115,7 @@ window#waybar {
     min-height: 5px;
     min-width: 80px;
     border-radius: 5px;
-    background-color: rgb(10, 10, 10);
+    background-color: @bgdark;
 }
 #backlight-slider highlight {
     border-radius: 5px;

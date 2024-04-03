@@ -30,7 +30,7 @@ It shoulds work with others as long as you've installed all the dependencies. Tr
     git clone git@github.com:TheA4Paper/dotfiles.git
     cd dotfiles
    ```
-    Run these in Home Directory is recommened. Any directory is fine (as of writing this), but anything may break at anytime.
+    Running these in Home Directory is recommened. Any directory is fine (as of writing this), but anything may break at anytime.
 3. Link the dotfiles
    ```bash
     ./install.sh
@@ -38,4 +38,4 @@ It shoulds work with others as long as you've installed all the dependencies. Tr
    ...Pray it works.
    Unlike the name would suggest, this script doesn't actually install anything. You have to take care of the dependencies yourself.
    ...Or just delete the bits that use the packages you don't have
-5. Enjoy your system hopefully not break.
+5. Enjoy. Hopefully nothing breaks. If it does... you've made a backup, right? ...Right?
