@@ -7,7 +7,7 @@
 }
 
 window#waybar {
-    background-color: rgba(255, 255, 255, 0.02);
+    background-color: rgba(255, 255, 255, 0);
     color: black;
 }
 
@@ -40,6 +40,7 @@ window#waybar {
 }
 
 #battery {
+    margin-left: 5px;
     min-width: 50px;
     color: rgb(212, 212, 212);
 }
@@ -52,17 +53,23 @@ window#waybar {
 
 /*icons*/
 #custom-speakericon {
+    margin-left: 6px;
     min-width: 15px;
     font-size: 20px;
     color: rgb(212, 212, 212);
 }
 
 #custom-lighticon {
+    margin-left: 6px;
     min-width: 15px;
     font-size: 20px;
     color: rgb(212, 212, 212);
 }
 
+#language {
+    color: rgb(212, 212, 212);
+    min-width: 20px;
+}
 /*Audio*/
 #pulseaudio-slider {
     padding: 0 10 0 0;

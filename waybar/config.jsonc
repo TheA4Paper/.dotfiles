@@ -12,11 +12,14 @@
     "modules-center": [
     ],
     "modules-right": [
+        "custom/separator",
         "custom/lighticon",
         "backlight/slider",
         "custom/separator",
         "custom/speakericon",
         "pulseaudio/slider",
+        "custom/separator",
+        "hyprland/language",
         "custom/separator",
         "battery",
         "clock"
@@ -92,6 +95,11 @@
         },
         "sort-by-number": true
       },
+
+      "hyprland/language": {
+        "format": "{short}",
+        "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
+    },
 
     /* Icons */
     "custom/separator": {
