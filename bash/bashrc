@@ -10,6 +10,7 @@ alias grep='grep --color=auto'
 
 alias sudo='sudo '
 alias vim='nvim'
+alias se='sudoedit'
 alias code='code --enable-features=UseOzonePlatform --ozone-platform=wayland'
 
 ## Colors?  Used for the prompt.
