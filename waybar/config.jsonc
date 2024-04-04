@@ -127,7 +127,7 @@
         "tooltip-format-wifi": "{essid}",
         "tooltip-format-ethernet": "{ifname} ",
         "tooltip-format-disconnected": "Disconnected",
-        "on-click": "iwgtk",
+        "on-click": "hyprctl dispatch exec [floating] iwgtk",
         "max-length": 50
     },
 
@@ -139,7 +139,7 @@
         "tooltip-format": "{controller_alias}\t{controller_address}",
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-        "on-click": "blueberry"
+        "on-click": "hyprctl dispatch exec [size 600 600\\;floating] blueman-manager"
     },
 
     /* Icons */
