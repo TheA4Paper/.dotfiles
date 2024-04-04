@@ -15,7 +15,7 @@ window#waybar {
 }
 
 #workspaces {
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px 5px 5px;
     margin: 0;
     background-color: @bgdark;
     border-radius: 0px 0px 20px 0px;
@@ -38,7 +38,7 @@ window#waybar {
     /* font-size: 13; */
     color: @clight;
     background-color: @bgdark;
-    padding: 0px 15px 0px 15px;
+    padding: 0px 10px 0px 15px;
     border-radius: 0px 0px 0px 20px;
 }
 
