@@ -23,19 +23,21 @@ It shoulds work with others as long as you've installed all the dependencies. Tr
    - dunst
    - brightnessctl
    - polkit-gnome
+   - iwgtk
+   - blueman
 
    This list may not be exhausive. It's only here to remind myself in case I miss something. Go figure out how to install any of this yourself too.
 2. Download the dotfiles
     ```bash
-    git clone git@github.com:TheA4Paper/dotfiles.git
-    cd dotfiles
+    git clone git@github.com:TheA4Paper/.dotfiles.git
+    cd .dotfiles
    ```
-    Running these in Home Directory is recommened. Any directory is fine (as of writing this), but anything may break at anytime.
+    Running these in Home Directory is recommened. Otherwise you will have to adopt the linking process accordingly.
 3. Link the dotfiles
    ```bash
-    ./install.sh
+    stow .
    ```
    ...Pray it works.
-   Unlike the name would suggest, this script doesn't actually install anything. You have to take care of the dependencies yourself.
+   This command simply link all the dotfies to their respective location. You have to take care of the dependencies yourself.
    ...Or just delete the bits that use the packages you don't have
 5. Enjoy. Hopefully nothing breaks. If it does... you've made a backup, right? ...Right?
