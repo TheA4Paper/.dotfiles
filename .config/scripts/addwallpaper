@@ -1,7 +1,7 @@
 file="$1"
 as="$2"
 
-if [ $# -eq 0 ]
+if [ "$2" == "" ]
     then
         filename_ext=$(basename "$file")
         filename=${filename_ext%.*}.png
