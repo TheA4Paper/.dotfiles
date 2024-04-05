@@ -1,3 +1,7 @@
 file="$1"
 
 ln -sf ~/.config/wallpapers/$file ~/.config/wallpapers/wallpaper
+
+killall hyprpaper
+sleep 0.2
+hyprctl dispatch exec hyprpaper

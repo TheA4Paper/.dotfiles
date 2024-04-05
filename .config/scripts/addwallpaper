@@ -1,5 +1,12 @@
 file="$1"
-filename_ext=$(basename "$file")
-filename=${filename_ext%.*}
+as="$2"
 
-magick $file ~/.config/wallpapers/$filename.png
+if [ $# -eq 0 ]
+    then
+        filename_ext=$(basename "$file")
+        filename=${filename_ext%.*}.png
+    else
+        filename=$as
+fi
+
+magick $file ~/.config/wallpapers/$filename
