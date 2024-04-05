@@ -1,0 +1,5 @@
+file="$1"
+filename_ext=$(basename "$file")
+filename=${filename_ext%.*}
+
+magick $file ~/.config/wallpapers/$filename.png
