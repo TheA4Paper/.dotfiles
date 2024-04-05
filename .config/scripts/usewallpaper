@@ -1,6 +1,12 @@
 file="$1"
 
-ln -sf ~/.config/wallpapers/$file ~/.config/wallpapers/wallpaper
+if [ ! -f ~/.config/wallpapers/$file ]; then
+    echo "File not found!"
+    exit
+fi
+
+
+ln -sfn ~/.config/wallpapers/$file ~/.config/wallpapers/wallpaper
 
 killall hyprpaper
 sleep 0.2
