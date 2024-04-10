@@ -1,0 +1,5 @@
+killall ags
+pkill ags
+sleep 0.2
+
+ags

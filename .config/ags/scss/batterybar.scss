@@ -1,0 +1,27 @@
+.batterybar {
+	levelbar trough{
+		// min-height: 100px;
+		.filled {
+			min-height: 2px;
+			border-radius: 0px 10px 10px 0px;
+			background-color: rgba(116, 255, 218, 0.7);
+			transition: background-color 0.5s
+		}
+		.empty {
+			min-height: 2px;
+			background-color: transparent;
+		}
+	}
+
+	levelbar.charging trough{
+		.filled {
+			background-color: rgba(68, 255, 134, 0.7);
+		}
+	}
+
+	levelbar.low trough{
+		.filled {
+			background-color: rgba(255, 72, 72, 0.8);
+		}
+	}
+}

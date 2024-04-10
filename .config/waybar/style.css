@@ -28,6 +28,7 @@ window#waybar {
     min-width: 20px;
     padding: 0px;
     margin: 0px 5px 0px 5px;
+    transition: min-width 0.15s;
 }
 
 #workspaces button.active {
@@ -129,6 +130,7 @@ window#waybar {
     border-radius: 5px;
     background-color: @bgdark;
 }
+
 #backlight-slider highlight {
     border-radius: 5px;
 }

@@ -1,6 +1,6 @@
 // -*- mode: jsonc -*-
 {
-    // "layer": "top", // Waybar at top layer
+    "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 30, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
@@ -10,7 +10,9 @@
         "hyprland/workspaces",
         "network",
         "custom/separator",
-        "bluetooth"
+        "bluetooth",
+        "custom/separator",
+        "idle_inhibitor"
     ],
     "modules-center": [
         "mpris"
@@ -140,6 +142,14 @@
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
         "on-click": "hyprctl dispatch exec [size 600 600\\;floating] blueman-manager"
+    },
+
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "󰒳",
+            "deactivated": "󰒲"
+        }
     },
 
     /* Icons */

@@ -1,0 +1,30 @@
+* {
+  font-family: Cantarell, "0xProto Nerd Font Propo";
+  font-weight: bold;
+  font-size: 14px; }
+
+.batterybar levelbar trough .filled {
+  min-height: 2px;
+  border-radius: 0px 10px 10px 0px;
+  background-color: rgba(116, 255, 218, 0.7);
+  transition: background-color 0.5s; }
+
+.batterybar levelbar trough .empty {
+  min-height: 2px;
+  background-color: transparent; }
+
+.batterybar levelbar.charging trough .filled {
+  background-color: rgba(68, 255, 134, 0.7); }
+
+.batterybar levelbar.low trough .filled {
+  background-color: rgba(255, 72, 72, 0.8); }
+
+.bar {
+  transition: none; }
+  .bar .centerbox {
+    background-color: #222222;
+    border: 1px solid #818181;
+    min-height: 30px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 100px;
+    margin: 5px 50px 0px 50px; }
