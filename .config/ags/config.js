@@ -1,7 +1,7 @@
 import GLib from 'gi://GLib';
 import Gio from 'gi://Gio';
 import {batteryBar} from "./modules/batterybar.js"
-import { bar } from './modules/bar.js';
+import { status } from './modules/status.js';
 // import { statusBar } from "./modules/statusBar.js"
 
 
@@ -27,7 +27,8 @@ applyScss()
 App.config({
 	windows: [
 		batteryBar(),
-		bar()
+		status()
+		// bar()
 		// statusBar()
 	]
 })

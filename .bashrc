@@ -6,6 +6,7 @@
 [[ $- != *i* ]] && return
 
 export PATH="$HOME/.config/scripts:$PATH"
+export PATH="$PATH:$HOME/.cargo/bin"
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'

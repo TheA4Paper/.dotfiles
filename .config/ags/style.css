@@ -19,12 +19,12 @@
 .batterybar levelbar.low trough .filled {
   background-color: rgba(255, 72, 72, 0.8); }
 
-.bar {
-  transition: none; }
-  .bar .centerbox {
-    background-color: #222222;
-    border: 1px solid #818181;
-    min-height: 30px;
-    padding: 0px 10px 0px 10px;
-    border-radius: 100px;
-    margin: 5px 50px 0px 50px; }
+.status * {
+  font-family: "Noto Sans Mono"; }
+
+.status .widgetbox {
+  margin: 70px 100px 0 0; }
+  .status .widgetbox .clock {
+    font-size: 70px;
+    min-width: 350px;
+    color: #E6C6D1; }
