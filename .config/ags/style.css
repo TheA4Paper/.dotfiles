@@ -6,7 +6,7 @@
 .batterybar levelbar trough .filled {
   min-height: 2px;
   border-radius: 0px 10px 10px 0px;
-  background-color: rgba(116, 255, 218, 0.7);
+  background-color: rgba(116, 255, 218, 0.5);
   transition: background-color 0.5s; }
 
 .batterybar levelbar trough .empty {
@@ -14,17 +14,21 @@
   background-color: transparent; }
 
 .batterybar levelbar.charging trough .filled {
-  background-color: rgba(68, 255, 134, 0.7); }
+  background-color: rgba(68, 255, 134, 0.5); }
 
 .batterybar levelbar.low trough .filled {
-  background-color: rgba(255, 72, 72, 0.8); }
+  background-color: rgba(255, 72, 72, 0.5); }
 
 .status * {
-  font-family: "Noto Sans Mono"; }
+  font-family: "Noto Sans Mono";
+  color: white; }
 
 .status .widgetbox {
   margin: 70px 100px 0 0; }
   .status .widgetbox .clock {
-    font-size: 70px;
-    min-width: 350px;
-    color: #E6C6D1; }
+    margin: 0;
+    margin-bottom: -10;
+    font-size: 70px; }
+  .status .widgetbox .connection * {
+    font-size: 18px;
+    margin-left: 6px; }

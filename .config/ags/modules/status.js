@@ -1,26 +1,38 @@
+const network = await Service.import('network')
+
 function box(monitor = 0) {
     const date = Variable("", {
         poll: [1000, 'date "+%H:%M:%S"'],
     })
 
-    // function connection(){
-    //     const network = Widget.Label({
+    function clock(){
+        return Widget.Label({
+            class_name: "clock",
+            label: date.bind(),
+            xalign: 0,
+        })
+    }
 
-    //     })
-    //     return Widget.Box({
-
-    //     })
-    // }
+    function connection(){
+        const internet = () => Widget.Label({
+            label: network.wifi.bind('ssid')
+            .as(ssid => ssid || 'Unknown'),
+        })
+        return Widget.Box({
+            class_name: "connection",
+            children: [
+                internet(),
+            ]
+        })
+    }
 
     return Widget.Box({
         class_name: "widgetbox",
         vertical: true,
         hpack: 'start',
         children: [
-            Widget.Label({
-                class_name: "clock",
-                label: date.bind()
-            })
+            clock(),
+            connection()
         ]
     })
 }

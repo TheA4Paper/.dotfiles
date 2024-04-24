@@ -1,13 +1,22 @@
 .status {
     *{
         font-family: "Noto Sans Mono";
+        // color: #E6C6D1
+        color: white
     }
     .widgetbox {
         margin: 70px 100px 0 0;
         .clock {
+            margin: 0;
+            margin-bottom: -10;
             font-size: 70px;
-            min-width: 350px;
-            color: #E6C6D1
+        }
+
+        .connection {
+            * {
+                font-size: 18px;
+                margin-left: 6px;
+            }
         }
     }
 }
