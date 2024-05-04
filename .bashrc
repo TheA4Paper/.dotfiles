@@ -15,6 +15,7 @@ alias sudo='sudo '
 alias vim='nvim'
 alias se='sudoedit'
 alias code='code --enable-features=UseOzonePlatform --ozone-platform=wayland'
+[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
 
 ## Colors?  Used for the prompt.
 #Regular text color

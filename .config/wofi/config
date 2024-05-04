@@ -1,0 +1,6 @@
+mode=drun
+allow_images=true
+image_size=15
+prompt=Search
+insensitive=true
+matching=multi-contains
